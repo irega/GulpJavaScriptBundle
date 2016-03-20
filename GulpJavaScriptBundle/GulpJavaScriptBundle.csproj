@@ -46,6 +46,7 @@
     <None Include="package.json" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".tests\gestorPadres.Spec.js" />
     <Content Include="gulpfile.js" />
     <Content Include="src\js\hijos\gestorHijos.js" />
     <Content Include="src\js\hijos\hijo.js" />

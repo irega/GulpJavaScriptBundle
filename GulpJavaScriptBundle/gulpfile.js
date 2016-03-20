@@ -19,6 +19,11 @@ gulp.task('watch', function () {
     gulp.watch(paths.js_files, ['bundle-js']);
 });
 
+gulp.task('specs', function () {
+    return gulp.src('assets/js/spec/lib/*.js')
+        .pipe(jasmine());
+});
+
 gulp.task('default', ['bundle-js']);
 
 gulp.task('start', ['bundle-js', 'watch']);
