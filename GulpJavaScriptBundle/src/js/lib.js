@@ -2,7 +2,7 @@
 var GestorHijos = require('./hijos/gestorHijos');
 var GestorRelaciones = require('./relaciones/gestorRelaciones');
 
-window.MiLibreriaJS = MiLibreriaJS || {};
+window.MiLibreriaJS = window.MiLibreriaJS || {};
 
 (function (libreria) {
     "use strict";
@@ -22,4 +22,4 @@ window.MiLibreriaJS = MiLibreriaJS || {};
     }
     libreria.obtenerUltimaRelacion = instanciaGestorRelaciones.obtenerUltimaRelacion;
 
-}(MiLibreriaJS));
+}(window.MiLibreriaJS));
