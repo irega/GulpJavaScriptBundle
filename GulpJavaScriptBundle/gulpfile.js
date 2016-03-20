@@ -14,7 +14,6 @@ gulp.task('specs', function () {
 
 gulp.task('bundle-js', function () {
     bundler.bundle()
-
     .pipe(fs.createWriteStream('bin/miLibreria.js'));
 });
 
